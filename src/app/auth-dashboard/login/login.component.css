@@ -4,8 +4,8 @@
     justify-content: center;
     background-color: transparent;
     z-index: 5;
-    width: 50%;
-    margin-left: 44%;
+    width: 100%;
+    margin-left: 20%;
     margin-top: 5%;
   }
   
@@ -34,4 +34,25 @@
     cursor: pointer;
   }
   
-  
+  .login-page .forget-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .login-page .forgot-link {
+  text-decoration: underline;
+  border-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  color: #484848;
+  margin: 0 0 0 0.5rem;
+}
+
+.mat-raised-button {
+  background-color: #22B8C6;
+  color: #fff;
+}
+
