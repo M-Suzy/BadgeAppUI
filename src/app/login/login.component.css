@@ -1,0 +1,37 @@
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 5;
+    width: 50%;
+    margin-left: 44%;
+    margin-top: 5%;
+  }
+  
+  .content {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    color: #22B8C6;
+
+  }
+  
+  .login-form {
+    padding: 40px;
+    background: transparent;
+  }
+
+  
+  .login-error {
+    color: red;
+    padding: 16px 0;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+  

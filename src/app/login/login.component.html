@@ -1,0 +1,48 @@
+<div class="login-page">
+    <div class="content">
+      <form class="login-form" [formGroup]="loginFormGroup">
+        <div class="text-center">
+          <h3 class="mb-4">Log in</h3>
+        </div>
+        <div fxFlex fxLayout="row" fxLayout.lt-md="column">
+          <div fxFlexFill>
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Username</mat-label>
+              <input matInput type="email" formControlName="username" autofocus required>
+              <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+          </div>
+        </div>
+        <div fxFlex fxLayout="row" fxLayout.lt-md="column">
+          <div  fxFlexFill>
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Password</mat-label>
+              <input matInput [type]="passwordInputType" formControlName="password">
+                  <mat-icon matSuffix class="pointer" (click)="showHidePassword()">{{visibilityIcon}}</mat-icon>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="login-error" *ngIf="isFailed">
+          Wrong username or password.
+        </div>
+        <div class="login-error" *ngIf="!isFormValid">
+          Invalid username or password. Inputs must have at least 5 characters.
+        </div>
+        <div class="form-group clearfix">
+            <div class="custom-control custom-checkbox float-left">
+              <input type = 'checkbox'
+              class="custom-control-input" id="customCheck" name="rem">
+              <label class="custom-control-label" for="customCheck">Remember me</label>
+            </div>
+            <div class="forgot float-right">
+              <a href="#" id="forgot-link">Forgot Password?</a>
+            </div>
+          </div>
+        <div class="mt-4" fxFlex fxLayout="row" fxLayout.lt-md="column">
+          <div fxFlexFill>
+            <button mat-raised-button color="primary" class="w-100">Login</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
