@@ -1,0 +1,70 @@
+<div class="register-page">
+    <div class="content">
+      <form class="register-form" [formGroup]="registerFormGroup">
+        <div class="text-center">
+          <h3 class="mb-4">Sign Up</h3>
+        </div>
+        <div fxFlex fxLayout="row" fxLayout.lt-md="column">
+          <div fxLayoutGap>
+            <mat-form-field appearance="outline">
+              <mat-label>First Name</mat-label>
+              <input matInput type="text" formControlName="firstName" autofocus required>
+              <mat-error *ngIf="getViolation('firstName')">{{getViolation('firstName').message}}</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput type="text" formControlName="lastName" autofocus required>
+                <mat-error *ngIf="getViolation('lastName')">{{getViolation('lastName').message}}</mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <div fxFlex fxLayout="row" fxLayout.lt-md="column">
+            <div fxFlexFill>
+              <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" formControlName="email" autofocus required>
+                <mat-error *ngIf="getViolation('email')">{{getViolation('email').message}}</mat-error>
+                <mat-icon matSuffix>email</mat-icon>
+              </mat-form-field>
+            </div>
+          </div>
+        <div fxFlex fxLayout="row" fxLayout.lt-md="column">
+          <div  fxFlexFill>
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Password</mat-label>
+              <input matInput [type]="passwordInputType" formControlName="password">
+                  <mat-icon matSuffix class="pointer" (click)="showHidePassword()">{{visibilityIcon}}</mat-icon>
+            </mat-form-field>
+          </div>
+        </div>
+        <div fxFlex fxLayout="row" fxLayout.lt-md="column">
+            <div  fxFlexFill>
+              <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Confirm Password</mat-label>
+                <input matInput [type]="passwordInputType" formControlName="confirmPassword">
+                    <mat-icon matSuffix class="pointer" (click)="showHidePassword()">{{visibilityIcon}}</mat-icon>
+              </mat-form-field>
+            </div>
+        </div>
+        <div class="mt-4" fxFlex fxLayout="row" fxLayout.lt-md="column">
+          <div fxFlexFill>
+            <button mat-raised-button 
+            class="w-100">Sign up</button>
+          </div>
+        </div>
+        <div class="oldUser">
+          <div class="mt-4" fxFlex fxLayout="row" fxLayout.lt-md="column">
+              <mat-label for="oldUser">
+                Have an acount?
+              </mat-label>
+                <a routerLink="/login"
+                  [routerLinkActive]="'active'"
+                  class="oldUser">
+                  <strong>Log In</strong>
+                </a>
+        </div>
+        </div>
+      </form>
+    </div>
+</div>

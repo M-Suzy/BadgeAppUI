@@ -1,0 +1,70 @@
+.login-page {
+    background-image: url('../../assets/images/dashboard_background.svg');
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  
+  .login-page .content {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 5;
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 5%;
+    color: #22B8C6;
+
+  }
+  
+  .login-form {
+    padding: 40px;
+    background: transparent;
+  }
+
+  .login-page .newUser {
+    align-items: center;
+    font-size: 14px;
+    line-height: 19px;
+    color:#778899;
+  }
+  
+  .login-error {
+    color: red;
+    padding: 16px 0;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+  .login-page .forget-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .login-page .forgot-link {
+  text-decoration: underline;
+  border-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  color: #484848;
+  margin: 0 0 0 0.5rem;
+}
+
+.mat-raised-button {
+  background-color: #22B8C6;
+  color: #fff;
+}
+

@@ -1,0 +1,53 @@
+.register-page {
+    background-image: url('../../assets/images/dashboard_background.svg');
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  
+  .register-page .content {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 5;
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 5%;
+    color: #22B8C6;
+
+  }
+  
+  .register-form {
+    padding: 40px;
+    background: transparent;
+  }
+
+  .register-page .oldUser {
+    align-items: center;
+    font-size: 14px;
+    line-height: 19px;
+    color:#778899;
+  }
+  
+  .register-error {
+    color: red;
+    padding: 16px 0;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+
+.mat-raised-button {
+  background-color: #22B8C6;
+  color: #fff;
+}
+
