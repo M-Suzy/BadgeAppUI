@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+  production: false,
+  authApiUri: 'http://localhost:8050/auth',
+  clientId: 'clientId',
+  clientSecret: 'secret'
 };

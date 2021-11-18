@@ -1,6 +1,6 @@
 <div class="register-page">
     <div class="content">
-      <form class="register-form" [formGroup]="registerFormGroup">
+      <form class="register-form" [formGroup]="registerFormGroup" (ngSubmit)="onSignedUp()">
         <div class="text-center">
           <h3 class="mb-4">Sign Up</h3>
         </div>
@@ -44,6 +44,9 @@
                 <mat-label>Confirm Password</mat-label>
                 <input matInput [type]="passwordInputType" formControlName="confirmPassword">
                     <mat-icon matSuffix class="pointer" (click)="showHidePassword()">{{visibilityIcon}}</mat-icon>
+                    <mat-error class="password-mismatch" *ngIf="getViolation('confirmPassword')">
+                      Passwords does not match!
+                    </mat-error>
               </mat-form-field>
             </div>
         </div>

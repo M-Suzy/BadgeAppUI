@@ -5,7 +5,7 @@ import {
   HttpEvent,
   HttpInterceptor
 } from '@angular/common/http';
-import { BehaviorSubject, catchError, exhaustMap, filter, mergeMap, Observable, take, throwError } from 'rxjs';
+import { BehaviorSubject, catchError, filter, mergeMap, Observable, take, throwError } from 'rxjs';
 import { AuthService } from '../service/login/auth.service';
 import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
@@ -67,9 +67,5 @@ export class TokenInterceptor implements HttpInterceptor {
       }
     });
   }
-}
-
-function compactMap(arg0: () => Observable<HttpEvent<any>>): import("rxjs").OperatorFunction<any, unknown> {
-  throw new Error('Function not implemented.');
 }
 

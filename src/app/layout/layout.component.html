@@ -1,1 +1,43 @@
-<p>layout works!</p>
+<div class="layout">
+    <nav class="sidebar">
+        <div class="brand">
+            <h1 id="badgeh1">Badge</h1>
+            <h1 id="landh1">Land</h1>
+        </div>
+        <hr>
+            <div id = "main" class="menu-list">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                       Profile
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/user-list">
+                         User List
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" routerLink="badge-list">
+                         Badge List
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                         Requested Badges
+                        </a>
+                      </li>
+                </ul>
+        </div> 
+    </nav>
+    <div class="content">
+        <div class="card">
+            <div class="card-content">
+                <app-badge-list></app-badge-list>
+            </div>
+        </div>
+        
+    </div>
+
+</div>

@@ -11,6 +11,10 @@ const routes: Routes = [
       path: "register",
       loadChildren: () => import("./register/register.module").then(m => m.RegisterModule)
     },
+    {
+      path: "layout",
+      loadChildren: () => import("./layout/layout.module").then(m => m.LayoutModule)
+    },
     {path: '**', redirectTo: 'error', pathMatch: 'full'}
 ];
 @NgModule({

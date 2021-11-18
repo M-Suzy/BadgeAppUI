@@ -20,9 +20,9 @@ export class RoleGuard implements CanActivate {
           return true;
         }
       }
-      this._router.navigate(['/layout']);
+      this._router.navigate(['/login']);
       return false;
     }
-  }
+  
   
 }

@@ -1,1 +1,21 @@
-<p>user-list works!</p>
+
+<div class="card-group" *ngFor="let user of userList">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    {{user.id}}
+                </div>
+                <div class="col">
+                    {{user.name}}
+                </div>
+                <div class="col">
+                    {{user.email}}
+                </div>
+                <div class="col">
+                    {{user.badgeNum}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

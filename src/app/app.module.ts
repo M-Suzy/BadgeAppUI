@@ -9,6 +9,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CookieService} from 'ngx-cookie-service';
 import { TokenInterceptor } from './shared/interceptor/token.interceptor';
 import { AuthGuard } from './shared/guard/auth.guard';
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { AuthGuard } from './shared/guard/auth.guard';
     HttpClientModule,
     AppMaterialModule,
     BrowserAnimationsModule,
-    HttpClientXsrfModule
+    HttpClientXsrfModule,
+    LayoutModule
   ],
   declarations: [AppComponent],
   providers: [

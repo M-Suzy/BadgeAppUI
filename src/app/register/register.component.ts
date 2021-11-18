@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ViolationModel } from '../shared/model/violation';
 import { RegistrationService } from '../shared/service/register/registration.service';
@@ -10,7 +10,6 @@ import { RegistrationService } from '../shared/service/register/registration.ser
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-
   registerFormGroup: FormGroup;
   isProcessing = false;
   showMessage = false;
@@ -18,7 +17,7 @@ export class RegisterComponent implements OnInit {
   visibilityIcon = 'visibility';
   passwordInputType = 'password';
   message = '';
-  violations: ViolationModel[] = [];
+  violations: ViolationModel[] = [new ViolationModel()];
 
   constructor(private router: Router,
               private _registrationService: RegistrationService,
@@ -31,7 +30,7 @@ export class RegisterComponent implements OnInit {
       lastName: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.compose([Validators.required, Validators.minLength(7)])],
-      confirmPassword: ['', [Validators.required]]
+      confirmPassword: ['',  [Validators.required, passwordMatchValidator]],
     }, {updateOn: 'change'});
   }
 
@@ -43,7 +42,7 @@ export class RegisterComponent implements OnInit {
             if (response.body) {
               this.showMessage = true;
               this.ok = true;
-              setTimeout(() => this.goToSignIn(), 500);
+              setTimeout(() => this.goToSignIn(), 2000);
             }
           },
           response => {
@@ -90,4 +89,8 @@ export class RegisterComponent implements OnInit {
       this.registerFormGroup.get(fieldName).setValue('');
     });
   }
+}
+export const passwordMatchValidator: ValidatorFn = (formGroup: FormGroup): ValidationErrors | null => {
+  return formGroup.get('password')?.touched === formGroup.get('confirmPassword')?.touched ?
+    null : { 'passwordMismatch': true };
 }

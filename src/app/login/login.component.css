@@ -1,24 +1,25 @@
 .login-page {
+    background: #E5E5E5;
     background-image: url('../../assets/images/dashboard_background.svg');
     background-size: contain, cover;
     background-repeat: no-repeat;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
   }
   
   .login-page .content {
     z-index: 1;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     background-color: transparent;
     z-index: 5;
     width: 100%;
-    margin-left: 20%;
-    margin-top: 5%;
+    position: absolute;
+    width: 28%;
+    left: 61.7%;
+    top: 10%;
+    font-family: Open Sans;
+    font-style: normal;
+    letter-spacing: 1px;
     color: #22B8C6;
 
   }
@@ -47,7 +48,7 @@
   }
   
   .login-page .forget-actions {
-    display: flex;
+    display: inline;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;

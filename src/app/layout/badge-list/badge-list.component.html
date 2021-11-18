@@ -1,1 +1,23 @@
-<p>badge-list works!</p>
+<div class="card-group" *ngFor="let badge of badges">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    {{badge.id}}
+                </div>
+                <div class="col">
+                   <img src="{{badge.imagePath}}" alt="{{badge.name}}"> 
+                </div>
+                <div class="col">
+                    {{badge.name}}
+                </div>
+                <div class="col">
+                    {{badge.level}}
+                </div>
+                <div class="col">
+                    {{badge.date}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

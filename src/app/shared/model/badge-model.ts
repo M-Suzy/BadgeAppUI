@@ -1,4 +1,7 @@
-export class BadgeModel{
-    constructor(private id: string, private name: string,
-        private level:number, private date: Date){}
+export class Badge{
+    id: string;
+    name: string;
+    imagePath: string;
+    level:number; 
+    date: Date
 }
