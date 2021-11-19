@@ -1,0 +1,25 @@
+<mat-sidenav-container class="sidenav-container" autosize="true">
+    <mat-sidenav [disableClose]="true" class="sidenav" mode="side" opened #sidenav> 
+        <span>
+            <p id = "badge">Badge</p>
+            <p id="land">Land</p>
+            <hr>
+        </span>
+        
+        <mat-action-list>
+            <div mat-menu-item *ngFor="let i of sideMenu"
+         [routerLink]="[i.route]"
+          (click)="$event.stopPropagation()"
+          class="menu-item">
+            <!--<mat-icon [matTooltip]="i.toolTip">{{ i.icon }}</mat-icon>&nbsp; -->
+            <span [hidden]="collapse">{{ i.name }}</span>
+        </div>
+        </mat-action-list>
+        
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

@@ -9,17 +9,16 @@ const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
-  },
-  {
-  path: 'user-list',
-  component: UserListComponent,
-  canActivate: [RoleGuard]
-  },
-  {
-    path: 'badge-list',
-    component: BadgeListComponent,
-    //canActivate: [RoleGuard]
-    }
+    children: [
+      { path: 'user-list', 
+      component: UserListComponent },
+      {
+        path: 'badge-list',
+        component: BadgeListComponent,
+        //canActivate: [RoleGuard]
+      }
+    ]
+  }
 ];
 
 @NgModule({

@@ -8,6 +8,8 @@ import { UserListComponent } from './admin/user-list/user-list.component';
 import { BadgeCreateComponent } from './admin/badge-create/badge-create.component';
 import { BadgeEditComponent } from './admin/badge-edit/badge-edit.component';
 import { BadgeListComponent } from './badge-list/badge-list.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { AppMaterialModule } from '../material.module';
 
 
 @NgModule({
@@ -18,10 +20,12 @@ import { BadgeListComponent } from './badge-list/badge-list.component';
     UserListComponent,
     BadgeCreateComponent,
     BadgeEditComponent,
-    BadgeListComponent
+    BadgeListComponent,
+    SideBarComponent
   ],
   imports: [
     CommonModule,
+    AppMaterialModule,
     LayoutRoutingModule
   ]
 })

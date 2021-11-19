@@ -1,0 +1,60 @@
+.sidenav-container{
+    background: -webkit-linear-gradient(top,45.36deg, #39CBC7 0%, #2B64CB 99.37%, transparent 100%);
+    cursor: pointer;
+}
+
+.sidenav-container .sidenav {
+    background-color: #2e353d;
+    position: fixed;
+    top: 0px;
+    width: 20%;
+    height: 100%;
+  }
+
+.sidenav-container  mat-sidenav-content{
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    padding: 16px;
+   }
+  
+  #badge{
+      color: #22B8C6;
+      font-weight: bold;
+      font-size: 30px;
+      margin-left: 22%;
+      top: 10.04%;
+  }
+  #land{
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center;
+  }
+  
+  #badge, #land{
+      display:inline;
+  }
+  
+ mat-action-list{
+      left: 20px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      /* identical to box height */
+      
+      letter-spacing: 1px;
+      
+      color: #B4BEC7;
+  }
+  
+  .sidenav-container .mat-card {
+     width: 80%;
+     height: 25%;
+     left: 20%;
+     top: 0px;
+     border-radius: 0pt;
+     background: linear-gradient(45.36deg, #39CBC7 0%, #2B64CB 99.37%);
+  }
