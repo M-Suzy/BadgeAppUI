@@ -9,7 +9,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CookieService} from 'ngx-cookie-service';
 import { TokenInterceptor } from './shared/interceptor/token.interceptor';
 import { AuthGuard } from './shared/guard/auth.guard';
-import { LayoutModule } from './layout/layout.module';
+import { ProfileComponent } from './profile/profile.component';
+import { AdminModule } from './admin/admin.module';
+import { SideBarComponent } from './shared/side-bar/side-bar.component';
 
 @NgModule({
   imports: [
@@ -18,10 +20,10 @@ import { LayoutModule } from './layout/layout.module';
     HttpClientModule,
     AppMaterialModule,
     BrowserAnimationsModule,
-    HttpClientXsrfModule,
-    LayoutModule
+    HttpClientXsrfModule, 
+    AdminModule
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, ProfileComponent],
   providers: [
     CookieService,
     AuthGuard,

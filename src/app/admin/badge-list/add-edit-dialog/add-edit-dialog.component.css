@@ -1,0 +1,27 @@
+.mat-dialog-actions .dialog-footer-buttons{
+    position: relative;
+    float: right;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  
+    border-top: 1px solid #efefef;
+    background: #F7F8F9;
+  
+    padding: 10px 24px;
+  }
+
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+}
+
+.mat-dialog-content{
+  box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  background: #FFFFFF
+}
+
+.mat-dialog-header{
+  background: #F7F8F9;
+}
+  

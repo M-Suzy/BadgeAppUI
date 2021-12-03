@@ -1,0 +1,32 @@
+<div class="mat-dialog">
+  <p mat-dialog-title>{{dialogTitle}} Badge </p>
+  <hr />
+  <div mat-dialog-content>
+    <div class="container">
+      <div class="row g-2">
+        <label>Name</label>
+        <div class="col-auto">
+          <mat-form-field appearance="outline" class="w-100">
+            <input matInput type = "text"
+                   [formControl]="badgeNameControl"
+                   [errorStateMatcher]="matcher">
+            <mat-error *ngIf="badgeNameControl.hasError('required')">
+              Badge is <strong>required</strong>.
+            </mat-error>
+          </mat-form-field>
+        </div>
+          <div class="col-auto">
+            <mat-radio-group [formControl]="badgeLevelControl">
+              <mat-radio-button value="1">Level 1</mat-radio-button>
+              <mat-radio-button value="2">Level 2</mat-radio-button>
+              <mat-radio-button value="3">Level 3</mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div mat-dialog-actions class="dialog-footer-buttons">
+      <button mat-button (click)="onCancel()">Cancel</button>
+      <button mat-stroked-button color="primary" (click)="onSave()" cdkFocusInitial>Save</button>
+    </div>
+</div>

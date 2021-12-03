@@ -1,0 +1,17 @@
+<div class="badge-list">
+    <p class = "d-inline p-2">Badge List</p>
+    <img class = "d-sm-inline p-2 mb-2" 
+    src="../../assets/images/create_badge.svg"
+    type = "submit"
+    matTooltip="Add badge"
+    (click)="openDialogForAddBadge('Add')"
+    />
+    <div class="badge-comps">
+        <div class="row m-2">
+            <div *ngFor="let item of badgeListItems" 
+            class="{{item.columnStyle}}"> {{item.columnName}}</div>
+        </div>
+    </div>
+    <app-badge-cards></app-badge-cards>
+</div>
+    

@@ -1,4 +1,4 @@
 export class UserInfoModel{
     username: string;
-    authorities: string[];
+    authority: string;
 }

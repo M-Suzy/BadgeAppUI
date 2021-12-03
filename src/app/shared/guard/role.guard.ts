@@ -16,7 +16,7 @@ export class RoleGuard implements CanActivate {
 
       const permittedRolesArray = route.data['permittedRoles'];
       for (const permittedRole of permittedRolesArray) {
-        if (currentUser.authorities.includes(permittedRole)) {
+        if (currentUser.authority.includes(permittedRole)) {
           return true;
         }
       }

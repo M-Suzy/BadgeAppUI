@@ -1,0 +1,27 @@
+<div class="card-group" *ngFor="let badge of badges">
+    <div class="card mb-2">
+        <div class="card-body">
+            <div class="row m-2">
+                <div class="col">
+                    {{badge.id}}
+                </div>
+                <div class="col">
+                   <img src="{{badge.image}}" alt="{{badge.name}}"> 
+                </div>
+                <div class="col">
+                    {{badge.name}}
+                </div>
+                <div class="col">
+                    <div class="circle"> {{badge.level}}</div>
+                </div>
+                <div class="col">
+                    {{badge.date | date}}
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-outline-primary d-sm-inline">Delete</button>
+                    <button type="button" class="btn btn-primary d-sm-inline">Edit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

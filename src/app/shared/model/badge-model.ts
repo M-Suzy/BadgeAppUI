@@ -1,7 +1,8 @@
-export class Badge{
+export class BadgeModel{
     id: string;
     name: string;
-    imagePath: string;
+    image: string;
     level:number; 
     date: Date
+
 }
