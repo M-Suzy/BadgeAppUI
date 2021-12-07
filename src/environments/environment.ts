@@ -4,7 +4,11 @@
 
 export const environment = {
   production: false,
-  authApiUri: 'http://localhost:8050/auth',
+  assignmentApiUri: 'http://localhost:8050/api/assignment',
+  imageApiUri: 'http://localhost:8050/api/images',
+  badgeApiUri: 'http://localhost:8050/api/badges',
+  userAPiUri: 'http://localhost:8050/api/users',
+  authApiUri: 'http://localhost:8050/',
   clientId: 'clientId',
   clientSecret: 'secret'
 };

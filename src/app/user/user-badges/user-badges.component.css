@@ -1,0 +1,32 @@
+.user-badge-list p{
+    left: 20.31%;
+    top: 6.8%;
+    bottom: 91.36%;
+    
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+    color: #334455;
+    
+    }
+
+.user-badge-list .badge-comps .row {
+    left: 21.88%;
+    right: 75.31%;
+    top: 10.68%;
+    bottom: 87.62%;
+    
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    
+    
+    color: #778899; }

@@ -22,3 +22,12 @@ export const requestedBadges = [
     new BadgeListItem('Requested Date', 'col'), 
     new BadgeListItem('', 'col-3')
 ]
+
+export const userBadgeList = [
+    new BadgeListItem('#ID', 'col'),
+    new BadgeListItem('', 'col'),
+    new BadgeListItem('Name', 'col'),
+    new BadgeListItem('Level', 'col'), 
+    new BadgeListItem('Status', 'col-5'),
+    new BadgeListItem('Date', 'col-3'), 
+]

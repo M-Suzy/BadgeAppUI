@@ -1,1 +1,26 @@
-<p>user-dashboard works!</p>
+<div class="dashboard-layout">
+    <div class = 'dashboard-title'>Dashboard</div>
+    <div class="dashboard-user-background-main">
+        <div class="dashboard-user-info-container">
+            <div class="greeting">{{getDashboardInfo().greeting}}</div>
+            <p> {{getDashboardInfo().content}}</p>   
+        </div>
+        <div class="dashboard_image" style="background-image: getIllustrationUrl();"></div>
+    </div>
+    <!-- badges -->
+    <div class="dashboard-badges container-fluid">
+        <div class = "badges-title">BADGES</div>
+        <div class="row container">
+            <button class="col-sm dashboard-badge-button" style="background-color:#1ED392;">
+                Received {{receivedBadges}}
+            </button>
+            <button class="col-sm dashboard-badge-button" style="background-color:#FFAA2E;">
+                Pending {{pendingBadges}}
+            </button>
+            <button class="col-sm dashboard-badge-button" style="background-color:#F8174D;">
+                Rejected {{rejectedBadges}}
+            </button>
+        </div>
+    </div>
+    <!-- end badges -->
+</div>

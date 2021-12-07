@@ -24,7 +24,7 @@ import { UserModule } from './user/user.module';
     AdminModule, 
     UserModule
   ],
-  declarations: [AppComponent, ProfileComponent],
+  declarations: [AppComponent],
   providers: [
     CookieService,
     AuthGuard,

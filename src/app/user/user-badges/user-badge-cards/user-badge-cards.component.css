@@ -1,0 +1,9 @@
+.card-group{
+    width: 100%;
+}
+.card-group .card {
+    border-radius: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(51, 68, 85, 0.15);
+    width: 100%;
+}

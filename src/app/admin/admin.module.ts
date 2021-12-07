@@ -11,9 +11,9 @@ import { AdminComponent } from './admin.component';
 import { BadgeCardsComponent } from './badge-list/badge-cards/badge-cards.component';
 import { AppMaterialModule } from '../material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { SideBarComponent } from '../shared/side-bar/side-bar.component';
 import { BadgeRequestCardsComponent } from './badge-requests/badge-request-cards/badge-request-cards.component';
 import { UserCardsComponent } from './user-list/user-cards/user-cards.component';
+import { LayoutModule } from '../layout/layout/layout.module';
 
 
 @NgModule({
@@ -25,7 +25,6 @@ import { UserCardsComponent } from './user-list/user-cards/user-cards.component'
     BadgeRequestsComponent,
     AdminComponent,
     BadgeCardsComponent,
-    SideBarComponent,
     BadgeRequestCardsComponent,
     UserCardsComponent
   ],
@@ -34,7 +33,8 @@ import { UserCardsComponent } from './user-list/user-cards/user-cards.component'
     AdminRoutingModule,
     AppMaterialModule,
     FormsModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule, 
+    LayoutModule
   ]
 })
 export class AdminModule { }

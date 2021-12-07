@@ -1,0 +1,21 @@
+
+.row .col{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 2px;
+    align-items: center;
+    color: #334455;
+    width: 100%; 
+}
+    
+.row .col-5 .badge-status{
+    padding: 6px;
+    color: white;
+    border-radius: 30%;
+    text-align: center;
+    width: 100;
+}
+    
