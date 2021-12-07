@@ -11,7 +11,7 @@ import { TokenInterceptor } from './shared/interceptor/token.interceptor';
 import { AuthGuard } from './shared/guard/auth.guard';
 import { ProfileComponent } from './profile/profile.component';
 import { AdminModule } from './admin/admin.module';
-import { SideBarComponent } from './shared/side-bar/side-bar.component';
+import { UserModule } from './user/user.module';
 
 @NgModule({
   imports: [
@@ -21,7 +21,8 @@ import { SideBarComponent } from './shared/side-bar/side-bar.component';
     AppMaterialModule,
     BrowserAnimationsModule,
     HttpClientXsrfModule, 
-    AdminModule
+    AdminModule, 
+    UserModule
   ],
   declarations: [AppComponent, ProfileComponent],
   providers: [

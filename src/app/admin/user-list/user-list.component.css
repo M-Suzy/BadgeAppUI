@@ -1,0 +1,22 @@
+.user-list p{
+    left: 20.31%;
+    right: 70.08%;
+    top: 6.8%;
+    bottom: 91.36%;
+    
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    align-items: center;
+    color: #334455;
+}
+
+.user-list .user-comps{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #778899
+}

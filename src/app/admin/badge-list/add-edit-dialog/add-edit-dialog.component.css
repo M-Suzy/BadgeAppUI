@@ -1,27 +1,70 @@
+.mat-dialog-container {
+  padding-top: 0 !important;
+  background-color: #F7F8F9;
+}
+.fx-spacer {
+  flex: 1 1 auto;
+}
 .mat-dialog-actions .dialog-footer-buttons{
-    position: relative;
-    float: right;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  
-    border-top: 1px solid #efefef;
-    background: #F7F8F9;
-  
-    padding: 10px 24px;
-  }
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  float: inline-end;
+  border-top: 1px solid #efefef;
+  background: #F7F8F9;
+
+  padding: 10px 24px;
+}
 
 .mat-radio-button ~ .mat-radio-button {
-    margin-left: 16px;
+  margin-left: 15px;
 }
 
 .mat-dialog-content{
-  box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-  background: #FFFFFF
+box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
+border-radius: 4px;
+background: #FFFFFF
 }
 
 .mat-dialog-header{
-  background: #F7F8F9;
+background: #F7F8F9;
+}
+
+.mat-dialog-actions .saveBtn {
+  background-color: #22B8C6;
+  color: #fff;
+  float: right;
+}
+
+.mat-dialog-actions .cancelBtn{
+  background-color: #fff;
+  border: 1px solid #22B8C6 !important;
+  color: #22B8C6;
+  float: right;
+}
+
+#nameLbl {
+  color: #22B8C6;
+}
+
+::ng-deep .container .row .col .mat-form-field-appearance-outline
+.mat-form-field-outline{
+  border-radius: 10px;
+  height: 48px;
+  color: #22B8C6 !important;
+  text-align: center;
+}
+
+::ng-deep .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+  opacity: 0 !important; /*click effect color change*/
+  background-color: #22B8C6 !important;  
+  color: #22B8C6
 }
   
+  ::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: #22B8C6 !important; /*inner circle color change*/  }
+  
+  ::ng-deep .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #22B8C6 !important; /*outer ring color change*/ 
+  }
+

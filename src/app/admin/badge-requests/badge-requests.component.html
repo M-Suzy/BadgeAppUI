@@ -1,1 +1,10 @@
-<p>badge-requests works!</p>
+<div class="badge-requests">
+    <p class = "d-inline p-2">Requested Badges</p>
+    <div class="badge-comps">
+        <div class="row m-2">
+            <div *ngFor="let item of badgeRequestItems" 
+            class="{{item.columnStyle}}"> {{item.columnName}}</div>
+        </div>
+    </div>
+    <app-badge-cards></app-badge-cards>
+</div>

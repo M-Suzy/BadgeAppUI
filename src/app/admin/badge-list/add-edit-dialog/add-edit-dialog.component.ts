@@ -20,8 +20,8 @@ export class AddEditDialogComponent {
     name: '', 
     image: '', 
     level: 1, 
-    date: new Date()};
-
+    date: new Date()
+  };
   
   badgeNameControl = new FormControl('', [
     Validators.required,
@@ -63,4 +63,3 @@ export class InputBadgeStateMatcher implements ErrorStateMatcher {
     return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
   }
 }
-

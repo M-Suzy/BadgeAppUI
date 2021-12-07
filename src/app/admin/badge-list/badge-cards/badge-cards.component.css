@@ -27,20 +27,24 @@
         text-align: center;
     }
     
-    .card .card-body .btn-outline-primary,
-     .btn-outline-primary:focus{
+    .card .card-body .editbtn{
         width: 100px;
         height: 48px;
-        left: 1026px;
-        top: 218px;
+        border: 1px solid #22B8C6 !important;
+        color: #22B8C6;
+        padding: 2px;
+    }
+    .card .card-body .editbtn:focus{
         border-color:#22B8C6;
         color: #22B8C6;
     }
-    .card .card-body .btn-outline-primary:hover{
+    .card .card-body .editbtn:hover{
+        width: 100px;
+        height: 48px;
         background-color: #22B8C6;
         color:white;
     }
-    .card .card-body .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    .card .card-body .deletebtn, .deletebtn:hover, .deletebtn:active, .deletebtn:visited {
         width: 100px;
         height: 48px;
         background-color: #22B8C6 !important;

@@ -1,0 +1,17 @@
+.card {
+    border-radius: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(51, 68, 85, 0.15);
+    }
+    
+    .card .card-body .row {
+    
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 2px;
+    color: #334455;
+    
+    }
+    

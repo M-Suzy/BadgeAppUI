@@ -1,12 +1,16 @@
-<div class="mat-dialog">
-  <p mat-dialog-title>{{dialogTitle}} Badge </p>
-  <hr />
-  <div mat-dialog-content>
+<h4 mat-dialog-title>
+  <mat-toolbar role="toolbar" class="task-header">
+      <span> {{dialogTitle}} Badge</span>
+      <span class="fx-spacer"></span>
+          <span (click)="onCancel()" aria-hidden="true" style="cursor: pointer;">&times;</span>
+  </mat-toolbar>
+</h4>
+<div mat-dialog-content>
     <div class="container">
       <div class="row g-2">
-        <label>Name</label>
-        <div class="col-auto">
-          <mat-form-field appearance="outline" class="w-100">
+        <label id="nameLbl">Name</label>
+        <div class="col ">
+          <mat-form-field appearance="outline" id="nameForm">
             <input matInput type = "text"
                    [formControl]="badgeNameControl"
                    [errorStateMatcher]="matcher">
@@ -15,7 +19,7 @@
             </mat-error>
           </mat-form-field>
         </div>
-          <div class="col-auto">
+          <div class="col-auto mt-4">
             <mat-radio-group [formControl]="badgeLevelControl">
               <mat-radio-button value="1">Level 1</mat-radio-button>
               <mat-radio-button value="2">Level 2</mat-radio-button>
@@ -24,9 +28,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div mat-dialog-actions class="dialog-footer-buttons">
-      <button mat-button (click)="onCancel()">Cancel</button>
-      <button mat-stroked-button color="primary" (click)="onSave()" cdkFocusInitial>Save</button>
-    </div>
+</div>
+<div mat-dialog-actions class="dialog-footer-buttons">
+    <button mat-button class="cancelBtn" (click)="onCancel()" >Cancel</button>
+    <button mat-button class="saveBtn" (click)="onSave()">Save</button>
 </div>

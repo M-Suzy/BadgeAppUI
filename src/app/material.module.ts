@@ -11,7 +11,8 @@ import { MatCardModule} from "@angular/material/card";
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatTooltipModule } from "@angular/material/tooltip";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
-import {MatRadioModule} from '@angular/material/radio';
+import {MatRadioModule} from "@angular/material/radio"
+import {MatMenuModule} from "@angular/material/menu"
 
 
 @NgModule({
@@ -27,8 +28,9 @@ import {MatRadioModule} from '@angular/material/radio';
   MatCardModule, 
   MatDialogModule,
   MatTooltipModule, 
-  MatSnackBarModule, 
-  MatRadioModule
+  MatSnackBarModule,
+  MatRadioModule, 
+  MatMenuModule
   ],
   exports: [
   CommonModule,
@@ -43,7 +45,8 @@ import {MatRadioModule} from '@angular/material/radio';
   MatDialogModule, 
   MatTooltipModule,
   MatSnackBarModule,
-  MatRadioModule
+  MatRadioModule, 
+  MatMenuModule
   ],
 })
 export class AppMaterialModule { }

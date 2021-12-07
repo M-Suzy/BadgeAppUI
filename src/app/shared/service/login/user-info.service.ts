@@ -24,7 +24,7 @@ getCurrentUser(): UserInfoModel {
   const token = this._cookieService.get('token');
   const decodedToken = UserInfoService.getDecodedToken(token);
   currentUser.username = decodedToken.username;
-  currentUser.authority = decodedToken.authority;
+  currentUser.role = decodedToken.role;
   return currentUser;
 }
 }

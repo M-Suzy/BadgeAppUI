@@ -12,6 +12,8 @@ import { BadgeCardsComponent } from './badge-list/badge-cards/badge-cards.compon
 import { AppMaterialModule } from '../material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SideBarComponent } from '../shared/side-bar/side-bar.component';
+import { BadgeRequestCardsComponent } from './badge-requests/badge-request-cards/badge-request-cards.component';
+import { UserCardsComponent } from './user-list/user-cards/user-cards.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { SideBarComponent } from '../shared/side-bar/side-bar.component';
     BadgeRequestsComponent,
     AdminComponent,
     BadgeCardsComponent,
-    SideBarComponent
+    SideBarComponent,
+    BadgeRequestCardsComponent,
+    UserCardsComponent
   ],
   imports: [
     CommonModule,

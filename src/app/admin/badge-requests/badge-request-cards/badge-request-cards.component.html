@@ -2,22 +2,22 @@
     <div class="card mb-2">
         <div class="card-body">
             <div class="row m-2">
-                <div class="col mt-3"> {{badge.id}} </div>
+                <div class="col mt-3"> User Name</div>
                 <div class="col">
                    <img src="{{badge.image}}" alt="{{badge.name}}"> 
                 </div>
-                <div class="col mt-3">{{badge.name}}</div>
+                <div class="col mt-3">Creativity</div>
                 <div class="col mt-3">
-                    <div class="circle"> {{badge.level}}</div>
+                    <div class="circle"> 1 </div>
                 </div>
                 <div class="col p-2"> {{badge.date | date}} </div>
                 <div class="col-3 p-2">
                     <button mat-button
-                    class="editbtn"
-                    (click) = "openEditBadgeDialog('Edit')">Edit</button>
+                     color = "warn"
+                    (click) = "onReject()">Reject</button>
                     <button mat-button
-                     class="deletebtn"
-                     (click) = "openDeleteBadgeDialog(badge)">Delete</button>
+                     class="acceptbtn"
+                     (click) = "onAccept">Accept</button>
                 </div>
             </div>
         </div>

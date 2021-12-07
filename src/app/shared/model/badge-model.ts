@@ -4,5 +4,5 @@ export class BadgeModel{
     image: string;
     level:number; 
     date: Date
-
+    constructor(){}
 }

@@ -1,10 +1,10 @@
 .sidenav-container .sidenav {
-    background-color: #2e353d;
     position: fixed;
     top: 0px;
     width: 20%;
     height: 100%;
     cursor: pointer;
+    background-color: #2e353d;
   }
 
 .sidenav-container  mat-sidenav-content{
@@ -14,7 +14,7 @@
     padding: 16px;
    }
   
-  #badge{
+#badge{
       color: #22B8C6;
       font-weight: bold;
       font-size: 30px;
@@ -33,7 +33,7 @@
       display:inline;
   }
   
- mat-action-list{
+.mat-action-list{
       left: 20px;
       font-family: Open Sans;
       font-style: normal;
@@ -47,6 +47,6 @@
       color: #B4BEC7;
   }
   
-mat-sidenav-content{
+.mat-sidenav-content{
     background: #F7F8F9;
 }

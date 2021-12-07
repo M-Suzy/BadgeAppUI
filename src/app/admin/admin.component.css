@@ -6,6 +6,37 @@
     font-family: sans-serif;
   }
 
-.layout .mat-toolbar{
+  .admin-layout .header{
+    position: relative;
+    width: auto;
     background: white;
-}
+    padding: 0.25%;
+    text-align:right;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: 0.5px;
+    color: #334455;
+    
+  }
+
+  .admin-layout .header .dropdown .button:hover{
+    outline: transparent;
+    color: #fff !important;
+    text-decoration: none;
+  }
+
+ .square {
+    width: 40px;
+    height: 40px;
+    color: #FFFFFF;
+    background: #3298C9;
+    border-radius: 4px;
+  }
+
+  .admin-layout .header .dropdown .caret{
+    background-color:  #3298C9;
+  }

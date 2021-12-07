@@ -1,0 +1,16 @@
+.dialog-footer-buttons{
+    position: center;
+}
+
+.mat-dialog-actions .deleteBtn {
+    background-color: #22B8C6;
+    color: #fff;
+    position: relative;
+  }
+  
+  .mat-dialog-actions .cancelBtn{
+    background-color: #fff;
+    border: 1px solid #22B8C6 !important;
+    color: #22B8C6;
+    float: right;
+  }

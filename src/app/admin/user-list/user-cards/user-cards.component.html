@@ -1,0 +1,12 @@
+<div class="card-group" *ngFor="let user of userList">
+    <div class="card">
+        <div class="card-body">
+            <div class="row m-2">
+                <div class="col-1">{{user.id}}</div>
+                <div class="col-3"> {{user.name}} </div>
+                <div class="col-7">{{user.email}}</div>
+                <div class="col-auto"> {{user.badgeNum}} </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { BadgeModel } from 'src/app/shared/model/badge-model';
 import { AddEditDialogComponent } from './add-edit-dialog/add-edit-dialog.component';
-import { badgeList, BadgeListItem } from './badge-list-model.model';
+import { badgeList, BadgeListItem } from '../badge-list-model.model';
 
 @Component({
   selector: 'app-badge-list',
@@ -19,7 +19,7 @@ export class BadgeListComponent implements OnInit {
 
   openDialogForAddBadge(dialogTitle: string) {
     const dialogRef = this._dialog.open(AddEditDialogComponent, {
-      width: '40%',
+      width: '36.5%',
       position: {
       left: '27.34%',
       right: '27.34%',
