@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from 'src/app/shared/service/user/user.service';
 
 @Component({
   selector: 'app-user-dashboard',
@@ -14,7 +15,7 @@ export class UserDashboardComponent implements OnInit {
   illustrationURL ="./../../../assets/images/" + ((this.gender == 'male') ? 
                   "user_dashboard_male_ill.svg" : "user_dashboard_female_ill.svg");
 
-  constructor() { }
+  constructor(private _userService: UserService) { }
 
   ngOnInit(): void {
   }

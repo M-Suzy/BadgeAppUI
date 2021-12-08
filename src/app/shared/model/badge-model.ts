@@ -1,8 +1,10 @@
 export class BadgeModel{
-    id: string;
+    ownerId: string;
     name: string;
-    image: string;
     level:number; 
-    date: Date
-    constructor(){}
+    image: string;
+    ownerEmail: string;
+    assignmentDate: Date;
+    iconId: string;
+    creationDate: Date;
 }

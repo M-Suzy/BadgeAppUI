@@ -12,18 +12,25 @@ import { DeleteDialogComponent } from '../delete-dialog/delete-dialog.component'
 export class BadgeCardsComponent implements OnInit {
   badges: BadgeModel[]=[
     {
-      id: "1",
+      ownerId: "1",
       name: "Creativity",
+      level: 3, 
       image: "../../assets/images/badges/Creativity.svg",
-      level: 3,
-      date: new Date("01/09/2021")
+      ownerEmail: '',
+      assignmentDate: new Date(),
+      iconId: '1',
+      creationDate: new Date("01/09/2021"),
+    
     },
     {
-      id: "2", 
-      name: "Bravery",
-      image: "../../assets/images/badges/Bravery.svg", 
-      level: 2,
-      date: new Date("05/09/2021")
+      ownerId: "2",
+      name: "Creativity",
+      level: 1, 
+      image: "../../assets/images/badges/Creativity.svg",
+      ownerEmail: '',
+      assignmentDate: new Date(),
+      iconId: '1',
+      creationDate: new Date("01/09/2021"),
     }
   ];
   constructor(private _dialog: MatDialog) { }
@@ -57,7 +64,7 @@ export class BadgeCardsComponent implements OnInit {
       top: '9.77%',
       bottom: '42.58%'
       },
-      data: badge.id
+      data: badge.ownerId
     });
   }
 

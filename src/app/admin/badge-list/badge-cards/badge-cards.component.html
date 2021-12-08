@@ -2,7 +2,7 @@
     <div class="card mb-2">
         <div class="card-body">
             <div class="row m-2">
-                <div class="col mt-3"> {{badge.id}} </div>
+                <div class="col mt-3"> {{badge.ownerId}} </div>
                 <div class="col">
                    <img src="{{badge.image}}" alt="{{badge.name}}"> 
                 </div>
@@ -10,7 +10,7 @@
                 <div class="col mt-3">
                     <div class="circle"> {{badge.level}}</div>
                 </div>
-                <div class="col p-2"> {{badge.date | date}} </div>
+                <div class="col p-2"> {{badge.creationDate | date}} </div>
                 <div class="col-3 p-2">
                     <button mat-button
                     class="editbtn"

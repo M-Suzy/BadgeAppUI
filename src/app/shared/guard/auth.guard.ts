@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class AuthGuard implements CanActivate {
   constructor(private router: Router, private _cookieService: CookieService) {}
   canActivate(
-    route: ActivatedRouteSnapshot,
+    _route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
       if (!!this._cookieService.get('token') && localStorage.getItem('isLoggedin') === 'true') {
         return true;

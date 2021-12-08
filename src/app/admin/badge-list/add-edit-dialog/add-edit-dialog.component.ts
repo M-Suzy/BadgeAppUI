@@ -16,11 +16,14 @@ import { AddEditDialogModel } from './add-edit-dialog-model.model';
 export class AddEditDialogComponent {
   dialogTitle: string;
   badge: BadgeModel = {
-    id: '', 
-    name: '', 
-    image: '', 
+    ownerId: "1",
+    name: "",
     level: 1, 
-    date: new Date()
+    image: "",
+    ownerEmail: '',
+    assignmentDate: new Date(),
+    iconId: '1',
+    creationDate: new Date(),
   };
   
   badgeNameControl = new FormControl('', [

@@ -39,7 +39,7 @@ export class LoginComponent {
       this.authenticationService.login(new UserLoginModel(username, password))
       .subscribe(token => {
           this._cookieService.set('token', token.access_token);
-          this._cookieService.set('refresh_token', token.refresh_token);
+          this._cookieService.set('access_token', token.access_token);
           localStorage.setItem('isLoggedin', 'true');
           this.router.navigate(['/profile']);
         },

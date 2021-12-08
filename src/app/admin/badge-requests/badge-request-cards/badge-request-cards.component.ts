@@ -17,18 +17,24 @@ export class BadgeRequestCardsComponent implements OnInit {
 
   badges: BadgeModel[]=[
     {
-      id: "1",
+      ownerId: "1",
       name: "Creativity",
-      image: "../../assets/images/badges/Creativity.svg",
       level: 3,
-      date: new Date("01/09/2021")
+      image: "../../assets/images/badges/Creativity.svg",
+      ownerEmail: 'nnma@gmail.com',
+      assignmentDate: new Date(),
+      iconId: '1',
+      creationDate: new Date("01/09/2021")
     },
     {
-      id: "2", 
-      name: "Bravery",
-      image: "../../assets/images/badges/Bravery.svg", 
+      ownerId: "2",
+      name: "Creativity",
       level: 2,
-      date: new Date("05/09/2021")
+      image: "../../assets/images/badges/Bravery.svg", 
+      ownerEmail: 'nnma@gmail.com',
+      assignmentDate: new Date(),
+      iconId: '2',
+      creationDate: new Date("04/09/2021")
     }
   ];
 

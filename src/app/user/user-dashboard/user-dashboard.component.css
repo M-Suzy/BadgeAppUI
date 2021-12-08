@@ -55,3 +55,91 @@
   border-radius: 8px; 
   min-height: 20px;
 }
+
+#badges-title{
+padding-top: 15px;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+letter-spacing: 1px;
+padding-left: 5px;
+padding-bottom: 10px;
+color: #778899;
+
+}
+
+#dashboard-title{
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 5px;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #334455;
+}
+
+.dashboard-layout .dashboard-badges .received-badges{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    background-color: white;
+    color: #1ED392;
+    text-align: center;
+    float: right;
+    display: inline;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.dashboard-layout .dashboard-badges .row .col-sm{
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.dashboard-layout .dashboard-badges .pending-badges{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  font-size: 40px;
+  line-height: 54px;
+  text-align: center;
+  background-color: white;
+  color: #FFAA2E;
+  text-align: center;
+  float: right;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.dashboard-layout .dashboard-badges .rejected-badges{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  font-size: 40px;
+  line-height: 54px;
+  text-align: center;
+  background-color: white;
+  color:#F8174D;
+  text-align: center;
+  float: right;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
