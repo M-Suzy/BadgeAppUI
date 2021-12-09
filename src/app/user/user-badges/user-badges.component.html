@@ -5,12 +5,50 @@
     type = "submit"
     matTooltip="Add badge"
     />
-    <div class="badge-comps">
-        <div class="row m-2">
-            <div *ngFor="let item of badgeListItems" 
-            class="{{item.columnStyle}}"> {{item.columnName}}</div>
+    <ul class="nav nav-pills">
+        <li class="active"><a data-toggle="pill" href="#all">All</a></li>
+        <li><a data-toggle="pill" href="#received">Received</a></li>
+        <li><a data-toggle="pill" href="#pending">Pending</a></li>
+        <li><a data-toggle="pill" href="#rejected">Rejected</a></li>
+    </ul>
+      
+      <div class="tab-content">
+        <div id="all" class="tab-pane fade in active">
+            <div class="badge-comps">
+                <div class="row m-2">
+                    <div *ngFor="let item of badgeListItems" 
+                    class="{{item.columnStyle}}"> {{item.columnName}}</div>
+                </div>
+            </div>
+            <app-user-badge-cards></app-user-badge-cards>
         </div>
-    </div>
-    <app-user-badge-cards></app-user-badge-cards>
+        <div id="received" class="tab-pane fade">
+            <div class="badge-comps">
+                <div class="row m-2">
+                    <div *ngFor="let item of badgeListItems" 
+                    class="{{item.columnStyle}}"> {{item.columnName}}</div>
+                </div>
+            </div>
+            <app-user-badge-cards></app-user-badge-cards>
+        </div>
+        <div id="pending" class="tab-pane fade">
+            <div class="badge-comps">
+                <div class="row m-2">
+                    <div *ngFor="let item of badgeListItems" 
+                    class="{{item.columnStyle}}"> {{item.columnName}}</div>
+                </div>
+            </div>
+            <app-user-badge-cards></app-user-badge-cards>
+        </div>
+        <div id="rejected" class="tab-pane fade">
+            <div class="badge-comps">
+                <div class="row m-2">
+                    <div *ngFor="let item of badgeListItems" 
+                    class="{{item.columnStyle}}"> {{item.columnName}}</div>
+                </div>
+            </div>
+            <app-user-badge-cards></app-user-badge-cards>
+        </div>
+      </div>
 </div>
     

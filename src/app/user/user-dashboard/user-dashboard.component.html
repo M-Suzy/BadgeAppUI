@@ -10,18 +10,24 @@
     <!-- badges -->
     <div class="dashboard-badges container-fluid">
         <div id = "badges-title">BADGES</div>
-        <div class="row container">
-            <div class="col-sm square rounded" style="background-color:#1ED392;">
-                Received
-                <div class="received-badges square rounded">{{receivedBadges}}</div>
+        <div class="card-group container">
+            <div class="card rounded" style="width: 20%; background-color:#1ED392;">
+                <div class="card-body">
+                    Received
+                    <div class="received-badges square rounded">{{dashboardSummary.receivedBadges}}</div>
+                </div>
             </div>
-            <div class="col-sm square rounded" style="background-color:#FFAA2E;">
-                Pending 
-                <div class="pending-badges square rounded">{{pendingBadges}}</div>
+            <div class="card rounded" style="width: 20%; background-color:#FFAA2E;">
+                <div class="card-body">
+                    Pending 
+                    <div class="pending-badges square rounded">{{dashboardSummary.pendingBadges}}</div>
+                </div> 
             </div>
-            <div class="col-sm square rounded" style="background-color:#F8174D;">
-                Rejected 
-                <div class="rejected-badges square rounded">{{rejectedBadges}}</div>
+            <div class="card rounded" style="width: 20%; background-color:#F8174D;">
+                <div class="card-body">
+                    Rejected 
+                    <div class="rejected-badges square rounded">{{dashboardSummary.rejectedBadges}}</div>
+                </div>
             </div>
         </div>
     </div>

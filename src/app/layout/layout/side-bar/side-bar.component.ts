@@ -24,4 +24,11 @@ export class SideBarComponent implements OnInit {
     }
   }
 
+  getActive(){
+      if(this.isAdmin){
+        return 'users';
+      }
+      return 'dashboard'
+  }
+
 }
