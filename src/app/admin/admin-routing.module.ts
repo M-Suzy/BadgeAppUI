@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProfileComponent } from '../profile/profile.component';
+import { ProfileComponent } from '../layout/profile/profile.component';
 import { AdminComponent } from './admin.component';
 import { BadgeListComponent } from './badge-list/badge-list.component';
 import { BadgeRequestsComponent } from './badge-requests/badge-requests.component';

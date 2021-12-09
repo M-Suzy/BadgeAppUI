@@ -19,22 +19,15 @@ export class AuthService {
       'Authorization': 'Basic ' + btoa(`${environment.clientId}:${environment.clientSecret}`)
      }),
   }
-  private readonly httpOptionsForRefresh = {
-    headers: new HttpHeaders({
-      'Content-type': 'application/x-www-form-urlencoded',
-      'Authorization': 'Basic ' + btoa(`${environment.clientId}:${environment.clientSecret}`),
-      'refresh': 'refresh'
-    }),
-  };
   constructor(private http: HttpClient, 
     private cookieService: CookieService) { }
 
     getNewToken(): Observable<TokenModel> {
-      const refreshToken = this.cookieService.get('refresh_token');
+      const refreshToken = this.cookieService.get('access_token');
       let httpParams = new HttpParams();
-      httpParams = httpParams.append('refresh_token', refreshToken);
-      httpParams = httpParams.append('grant_type', 'refresh_token');
-      return this.http.post<TokenModel>(this._loginUrl, httpParams, this.httpOptionsForRefresh);
+      httpParams = httpParams.append('access_token', refreshToken);
+      httpParams = httpParams.append('grant_type', 'password');
+      return this.http.post<TokenModel>(this._loginUrl, httpParams, this.httpOptions);
     }
     
     getToken(): string | null {

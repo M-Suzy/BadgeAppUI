@@ -9,7 +9,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CookieService} from 'ngx-cookie-service';
 import { TokenInterceptor } from './shared/interceptor/token.interceptor';
 import { AuthGuard } from './shared/guard/auth.guard';
-import { ProfileComponent } from './profile/profile.component';
 import { AdminModule } from './admin/admin.module';
 import { UserModule } from './user/user.module';
 

@@ -1,0 +1,52 @@
+.profile .prof{
+font-family: sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+letter-spacing: 1px;
+text-transform: uppercase;
+
+color: #334455
+}
+.profile .card {
+background: #FFFFFF;
+/* Card/List_stop */
+box-shadow: 0px 0px 6px rgba(51, 68, 85, 0.15);
+margin-top: 50px;
+}
+
+.profile .card .card-body{
+    width: 95%;
+height: 40%;
+}
+
+.profile .card .card-body .personalInfo{
+font-family: sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+letter-spacing: 1px;
+margin: 10px;
+color: #778899;
+}
+
+.profile .card .card-body .row .col-sm .info {
+left: 43.98%;
+right: 38.83%;
+top: calc(50% - 41px/2 - 164.5px);
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 41px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.5px;
+
+color: #334455;
+}
+

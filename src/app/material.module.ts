@@ -13,7 +13,8 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {MatRadioModule} from "@angular/material/radio"
 import {MatMenuModule} from "@angular/material/menu"
-
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   imports: [
@@ -30,7 +31,9 @@ import {MatMenuModule} from "@angular/material/menu"
   MatTooltipModule, 
   MatSnackBarModule,
   MatRadioModule, 
-  MatMenuModule
+  MatMenuModule,
+  MatTabsModule,
+  MatGridListModule
   ],
   exports: [
   CommonModule,
@@ -46,7 +49,9 @@ import {MatMenuModule} from "@angular/material/menu"
   MatTooltipModule,
   MatSnackBarModule,
   MatRadioModule, 
-  MatMenuModule
+  MatMenuModule,
+  MatTabsModule,
+  MatGridListModule
   ],
 })
 export class AppMaterialModule { }

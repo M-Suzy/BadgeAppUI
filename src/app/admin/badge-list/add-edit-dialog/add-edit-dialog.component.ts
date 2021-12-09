@@ -5,6 +5,7 @@ import { ErrorStateMatcher } from '@angular/material/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { BadgeModel } from 'src/app/shared/model/badge-model';
+import { ImageModel } from 'src/app/shared/model/image-model.model';
 import { BadgeListComponent } from '../badge-list.component';
 import { AddEditDialogModel } from './add-edit-dialog-model.model';
 
@@ -25,11 +26,40 @@ export class AddEditDialogComponent {
     iconId: '1',
     creationDate: new Date(),
   };
+  icons: ImageModel[] = [
+    {
+      id: '1',
+      fileName: 'creative',
+      contentType: 'svg',
+      fileSize : 30,
+      imageType: 'svg',
+      fileContent: ''
+    },
+    {
+      id: '2',
+      fileName: 'creative',
+      contentType: 'svg',
+      fileSize : 30,
+      imageType: 'svg',
+      fileContent: ''
+    },
+    {
+      id: '3',
+      fileName: 'creative',
+      contentType: 'svg',
+      fileSize : 30,
+      imageType: 'svg',
+      fileContent: ''
+    }
+   ]
   
   badgeNameControl = new FormControl('', [
     Validators.required,
   ]);
   badgeLevelControl = new FormControl('', [
+    Validators.required,
+  ]);
+  badgeIconControl = new FormControl('', [
     Validators.required,
   ]);
   matcher = new InputBadgeStateMatcher();
