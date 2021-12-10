@@ -2,11 +2,12 @@
     <div class="content">
       <form class="register-form" [formGroup]="registerFormGroup" (ngSubmit)="onSignedUp()">
         <div class="text-center">
-          <h3 class="mb-4">Sign Up</h3>
+          <h3 class="mb-4" style="color: #22B8C6;">Sign Up</h3>
+          <p style="color: #778899;">Hello! Please provide info to create an account.</p>
         </div>
         <div fxFlex fxLayout="row" fxLayout.lt-md="column">
           <div fxLayoutGap>
-            <mat-form-field appearance="outline">
+            <mat-form-field appearance="outline" style="margin-right: 10px;">
               <mat-label>First Name</mat-label>
               <input matInput type="text" formControlName="firstName" autofocus required>
               <mat-error *ngIf="getViolation('firstName')">{{getViolation('firstName').message}}</mat-error>
@@ -19,9 +20,16 @@
             </mat-form-field>
           </div>
         </div>
+        <div class="gender">
+          <mat-radio-group>
+            <mat-radio-button value="male" style="margin-right: 10px; margin-bottom: 10px;">
+              Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+          </mat-radio-group>
+        </div>
         <div fxFlex fxLayout="row" fxLayout.lt-md="column">
             <div fxFlexFill>
-              <mat-form-field appearance="outline">
+              <mat-form-field appearance="outline" class="w-100">
                 <mat-label>Email</mat-label>
                 <input matInput type="email" formControlName="email" autofocus required>
                 <mat-error *ngIf="getViolation('email')">{{getViolation('email').message}}</mat-error>

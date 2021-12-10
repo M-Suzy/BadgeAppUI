@@ -5,7 +5,7 @@ import { UserBadgesComponent } from './user-badges/user-badges.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { UserBadgeCardsComponent } from './user-badges/user-badge-cards/user-badge-cards.component';
 import { BadgeCardComponent } from './user-badges/user-badge-cards/badge-card/badge-card.component';
-import { LayoutModule } from '../layout/layout/layout.module'
+import { LayoutModule } from '../layout/layout.module'
 import { AppMaterialModule } from '../material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserRoutingModule } from './user-routing.module';

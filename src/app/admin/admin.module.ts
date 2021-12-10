@@ -13,7 +13,7 @@ import { AppMaterialModule } from '../material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BadgeRequestCardsComponent } from './badge-requests/badge-request-cards/badge-request-cards.component';
 import { UserCardsComponent } from './user-list/user-cards/user-cards.component';
-import { LayoutModule } from '../layout/layout/layout.module';
+import { LayoutModule } from '../layout/layout.module';
 
 
 @NgModule({

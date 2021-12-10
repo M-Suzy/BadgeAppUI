@@ -11,15 +11,17 @@ export class UserDashboardComponent implements OnInit {
   illustrationURL:string; 
   gender: string = 'female';
   dashboardSummary: DashboardSummary = {
-    name: 'Suzy',
-    receivedBadges: 10,
-    rejectedBadges: 1,
-    pendingBadges: 2
+    name: '',
+    receivedBadges: 0,
+    rejectedBadges: 0,
+    pendingBadges: 0
   }
 
-  constructor() {
-    this.illustrationURL = "./../../../assets/images/" + ((this.gender == 'male') ? 
-    "user_dashboard_male_ill.svg" : "user_dashboard_female_ill.svg");
+  constructor(private _userService: UserService) {
+    this._userService.getDashboardSummary().subscribe(
+      response => {
+         this.dashboardSummary = response.body;
+        });
    }
 
   ngOnInit(): void {
@@ -35,6 +37,5 @@ export class UserDashboardComponent implements OnInit {
 
     getIllustrationUrl(){
       return "url('"+this.illustrationURL+"')";
-
     }
 }

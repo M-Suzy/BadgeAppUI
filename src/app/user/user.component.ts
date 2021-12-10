@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DashboardSummary } from '../shared/model/dashboard-summary.model';
 import { UserService } from '../shared/service/user/user.service';
 
 @Component({

@@ -1,4 +1,3 @@
-import { Byte } from "@angular/compiler/src/util";
 
 export class UserGeneralInfo {
     id: string;
@@ -7,5 +6,5 @@ export class UserGeneralInfo {
     about: string;
     email: string;
     role: string;
-    avatar: Byte[];
+    avatar: string;
 }

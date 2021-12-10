@@ -43,6 +43,14 @@ export class UserService {
     );
   }
 
+  getGeneralInfo(): Observable<HttpResponse<UserGeneralInfo>> {
+    return this._http.get<UserGeneralInfo>(
+      this._generalInfoUrl,
+      this._httpOptions
+    )
+  }
+  
+
 
 
 }
